@@ -115,6 +115,13 @@ endif
 endif
 endif
 
+
+# Vibrator
+TW_SUPPORT_INPUT_AIDL_HAPTICS := true
+PRODUCT_COPY_FILES += \
+    $(call find-copy-subdir-files,*,$(LOCAL_PATH)/proprietary/vibrator/system/,$(TARGET_COPY_OUT_RECOVERY)/root/system/)
+
+
 # Vintf - Keymaster
 ifeq ($(MSM8953_INCLUDE_CRYPTO),true)
 ifeq ($(MSM8953_KEYMASTER_VERSION),3.0)
