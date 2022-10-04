@@ -1,4 +1,4 @@
-# Common device tree for Xiaomi Thorium devices
+# Common device tree for BQ Bardock (msm8953) devices
 
 ```
 #
