@@ -95,6 +95,9 @@ TARGET_RECOVERY_DEVICE_MODULES += libcryptfs_hw
 RECOVERY_LIBRARY_SOURCE_FILES += $(TARGET_OUT_SHARED_LIBRARIES)/libcryptfs_hw.so
 endif
 
+# TWRP - USB
+TARGET_USE_CUSTOM_LUN_FILE_PATH := /config/usb_gadget/g1/functions/mass_storage.0/lun.%d/file
+
 # TWRP - Debug
 TARGET_USES_LOGD := true
 TWRP_INCLUDE_LOGCAT := true
